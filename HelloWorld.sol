@@ -22,4 +22,7 @@ contract HelloWorld {
     function getText() public view returns (string memory) {
         return textContent;
     }
+    function changeOwner(address newOwner) public {
+       owner = newOwner;
+    }
 }
