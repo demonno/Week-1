@@ -15,7 +15,7 @@ contract HelloWorld {
         textContent = _text;
     }
 
-    function setText(string memory _text) public {
+    function setText(string memory _text) onlyOwner public {
         textContent = _text;
     }
 
